@@ -1,0 +1,74 @@
+<div align='center'>
+
+
+<body bgcolor="#0B6121">
+<font color= "#FFD700"> <h1> Let's start dealing!! </h1> </font>
+
+<br>
+<hr>
+<br>
+
+<% 
+ 
+card_number1 =[2,3,4,5,6,7,8,9,10,'ace','jack','queen','king'].sample
+card_suit1=['hearts','spades','clubs','diamonds'].sample
+
+card_number2 =[2,3,4,5,6,7,8,9,10,'ace','jack','queen','king'].sample
+card_suit2=['hearts','spades','clubs','diamonds'].sample
+
+
+card_number3 =[2,3,4,5,6,7,8,9,10,'ace','jack','queen','king'].sample
+card_suit3=['hearts','spades','clubs','diamonds'].sample
+
+
+card_number4 =[2,3,4,5,6,7,8,9,10,'ace','jack','queen','king'].sample
+card_suit4=['hearts','spades','clubs','diamonds'].sample
+
+
+card_number5 =[2,3,4,5,6,7,8,9,10,'ace','jack','queen','king'].sample
+card_suit5=['hearts','spades','clubs','diamonds'].sample
+
+
+
+%>
+
+
+
+<img src="http://golearntocode.com/images/cards/<%= card_number1 %>_of_<%= card_suit1 %>.png" width="15%" height="15%">
+<img src="http://golearntocode.com/images/cards/<%= card_number2 %>_of_<%= card_suit2 %>.png" width="15%" height="15%">
+<img src="http://golearntocode.com/images/cards/<%= card_number3 %>_of_<%= card_suit3 %>.png" width="15%" height="15%">
+<img src="http://golearntocode.com/images/cards/<%= card_number4 %>_of_<%= card_suit4 %>.png" width="15%" height="15%">
+<img src="http://golearntocode.com/images/cards/<%= card_number5 %>_of_<%= card_suit5 %>.png" width="15%" height="15%">
+
+<br>
+<br>
+<hr>
+
+</div>
+
+
+<img src="http://www.las-vegas.cruzino.com/hr/lv/bellagio%20logo.gif" width="10%" height="10%" >
+
+</body>
+
+
+
+
+<!-- Welcome to KiEI-925 Casino, <%= params["name"] %>
+
+
+<%
+number =[2,3,4,5,6,7,8,9,10,'ace','jack','queen','king']
+suits=['hearts','spades','clubs','diamonds']
+
+deck =number.product(suits)
+hand =deck.sample(5)
+
+%>
+
+<%for card in hand %>
+  <img src="http://golearntocode.com/images/cards/<%= card[0] %>_of_<%= card[1] %>.png" width="15%" height="15%">
+<% end %> 
+
+
+ -->
